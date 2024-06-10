@@ -12,5 +12,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
         design2.style.display = 'block';
       }
     }
+
+    // Initial call to set the correct design based on current viewport width
     switchDesign();
-  });
+
+    // Add event listener to handle window resize
+    window.addEventListener('resize', switchDesign);
+});
