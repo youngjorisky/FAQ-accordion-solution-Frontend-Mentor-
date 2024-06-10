@@ -115,9 +115,9 @@ body {
   color: #ad28eb;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 375px) {
   #container {
-    width: 720px;
+    width: 375px;
   }
   
   #outer-box {
