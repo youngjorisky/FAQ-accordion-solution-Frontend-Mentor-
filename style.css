@@ -117,7 +117,7 @@ body {
 
 @media (max-width: 600px) {
   #container {
-    width: 100%;
+    width: 600px;
   }
   
   #outer-box {
