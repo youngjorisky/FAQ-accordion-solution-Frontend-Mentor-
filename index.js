@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   
     function switchDesign() {
       const viewportWidth = window.innerWidth;
-      if (viewportWidth >= 720) { // Desktop view
+      if (viewportWidth >= 375) { // Desktop view
         design1.style.display = 'block';
         design2.style.display = 'none';
       } else { // Mobile view
