@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 900px;
+}
+
+#inner-box-1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 320px;
+}
+
+#outer-box {
+  top: 20%;
+  width: 50%;
+  height: 60%;
+  z-index: 1;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  padding-top: 35px;
+  box-shadow: rgb(47, 21, 51, 0.1) 0px 7px 29px 0px;
+}
+
+#inner-box-2 {
+  position: absolute;
+  bottom: 0;
+  width: 100.3%;
+  height: 65%;
+  background-color: #f9f0ff;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+  font-size: 2.0rem;
+  padding-bottom: 20px;
+}
+
+#header-container #star {
+  margin-right: 20px;
+}
+
+#header-container h1 {
+  color: #2f1533;
+  margin: 0;
+}
+
+#text-1,
+#text-2,
+#text-3,
+#text-4 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#text-1 #minus,
+#text-2 #plus,
+#text-3 #plus,
+#text-4 #plus {
+  margin-left: auto;
+}
+
+#deep {
+  font-size: 1.2rem;
+  color: #2f1533;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#after-click {
+  color: #8c6991;
+  opacity: 0.8;
+  margin: 0;
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+
+#text-1 {
+  margin-top: -15px;
+}
+
+#border {
+  border: 1px solid #8c6991;
+  width: 100%;
+  opacity: 0.1;
+}
+
+#deep:hover {
+  color: #ad28eb;
+}
+
+@media (max-width: 375px) {
+  #container {
+    width: 375px;
+  }
+  
+  #outer-box {
+    width: 90%;
+    height: 62%;
+    padding: 30px;
+  }
+  
+  #header-container {
+    font-size: 1.0rem;
+  }
+  
+  #deep {
+    font-size: 1.05rem;
+  }
+  
+  #after-click {
+    font-size: 1.0rem;
+  }
+  
+  #text-1 #minus,
+  #text-3 #plus {
+    width: 52px;
+    height: 52px;
+  }
+  
+  #text-4 #plus {
+    width: 50px;
+    height: 50px;
+  }
+}
